@@ -12,8 +12,9 @@ export class Component1Component implements OnInit {
   ngOnInit() {
   }
 
+  
   submit(value){
-    console.log(value);
+    console.log(value); //diplay inserted value to console
   }
 
 }
