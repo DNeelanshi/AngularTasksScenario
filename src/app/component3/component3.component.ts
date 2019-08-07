@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Component3Component implements OnInit {
 
-  @Input('parentData') childmessage = "";
+  @Input('parentData') childmessage = "";  //recieving the data from parent component1
 
   constructor() { 
   }
