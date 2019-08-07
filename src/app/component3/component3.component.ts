@@ -9,7 +9,7 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 export class Component3Component implements OnInit {
 
  public inputval=""
- @Output() public checkevent = new EventEmitter();
+ @Output() public checkevent = new EventEmitter(); //sending data to parent component
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +17,6 @@ export class Component3Component implements OnInit {
 
   submit(){
     console.log(this.inputval);
-    this.checkevent.emit(this.inputval);
+    this.checkevent.emit(this.inputval); //emiting the event to padd data
   }
 }
