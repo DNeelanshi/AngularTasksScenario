@@ -9,7 +9,7 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 export class Component2Component implements OnInit {
 
 
-  @Output() public childvalue = new EventEmitter();
+  @Output() public childvalue = new EventEmitter(); //2output to send data to parent from this child component
   public childname ="";
 
   constructor() { }
