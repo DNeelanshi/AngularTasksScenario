@@ -8,14 +8,14 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class Component2Component implements OnInit {
 
   public inputname="";
-  @Output() public checkevent = new EventEmitter();
+  @Output() public checkevent = new EventEmitter(); //passind tata to parent 
   constructor() { }
 
   ngOnInit() {
   }
 
   submit(){
-    this.checkevent.emit(this.inputname);
+    this.checkevent.emit(this.inputname); //eent firing to padd data 
   }
 
 }
