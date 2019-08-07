@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Component2Component implements OnInit {
 
- @Input('parentData') public name;
+ @Input('parentData') public name; //using @Input to get data from parent
   constructor() { }
 
   ngOnInit() {
